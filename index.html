@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="kural_with_paal_iyal.json"></script> 
+</head>
+<body>
+    <div class="container">
+        <h1>திருக்குறள் பால் மற்றும் இயல் ✨</h1>
+        
+        <div class="quote-box">
+            <p id="quoteText">Click the button below to fetch a Kural!</p>
+            <p id="quoteAuthor" class="Author">- Tiruvalluvar</p>
+        </div>
+        <label for="quantity">குறள் எண்:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="0" max="100" step="1">
+        <button id="fetchQuoteButton">உங்கள் குரள்</button>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.quote-box {
+    margin: 30px 0;
+    padding: 20px;
+    border-left: 5px solid #007bff; /* Primary blue color */
+    background-color: #e9f5ff;
+    border-radius: 8px;
+}
+
+#quoteText {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #555;
+    margin: 0 0 15px 0;
+    line-height: 1.4;
+}
+
+.author {
+    font-size: 1.1em;
+    color: #007bff;
+    text-align: right;
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#fetchQuoteButton {
+    padding: 12px 25px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#fetchQuoteButton:hover {
+    background-color: #0056b3;
+}
+
+#fetchQuoteButton:active {
+    transform: scale(0.98);
+}
