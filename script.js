@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Extract the quote content and author name
             const content =  data.kural[quantity.value-1]["Line1"]+data.kural[quantity.value-1]["Line2"]
             const mv = data.kural[quantity.value-1]['mv']
-            const paaliyal =  data.kural[quantity.value-1]["paal_tamil"]+" "+data.kural[quantity.value-1]["iyal"]+" "+data.kural[quantity.value-1]["athikaram_tamil"]
+            const paaliyal =  data.kural[quantity.value-1]["paal_tamil"]+" | "+data.kural[quantity.value-1]["iyal"]+" | "+data.kural[quantity.value-1]["athikaram_tamil"]
             
-            const author = "திருவள்ளுவர் "
+            const author = "திருவள்ளுவர் |"
             // Update the HTML elements with the new data
             quoteTextElement.innerHTML = content + "<br><br>" + mv;
             //quoteTextElement.Content = paaliyal;
