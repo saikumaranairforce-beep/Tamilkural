@@ -1,26 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ta">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quote Generator</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="kural_with_paal_iyal_with_athikaram.json"></script> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>திருக்குறள் Search</title>
+  <link rel="stylesheet" href="style.css" />
+   <script type="text/javascript" src="kural_with_paal_iyal_with_athikaram.json"></script>
 </head>
+
 <body>
-    <div class="container">
-        <h1>திருக்குறள் பால் மற்றும் இயல் ✨</h1>
-        
-        <div class="quote-box">
-            <p id="quoteText">Click the button below to fetch a Kural!</p>
-            <p id="quoteAuthor" class="Author">- Tiruvalluvar</p>
-        </div>
-        <label for="quantity">குறள் எண்:</label>
-        <input type="number" id="quantity" name="quantity" value="1" min="0" max="100" step="1">
-        <button id="fetchQuoteButton">உங்கள் குரள்</button>
-        
+  <div class="container">
+    <h1>திருக்குறள் பால் மற்றும் இயல் ✨</h1>
+
+    <!-- Tabs -->
+    <div style="display:flex; gap:10px; margin: 12px 0;">
+      <button id="tabNumber" type="button">எண் மூலம் தேடல்</button>
+      <button id="tabWord" type="button">English Word Search</button>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Number Search -->
+    <div id="panelNumber">
+      <label for="quantity">குறள் எண்:</label>
+      <input type="number" id="quantity" name="quantity" value="1" min="1" max="1330" step="1" />
+      <button id="fetchQuoteButton" type="button">உங்கள் குரள்</button>
+    </div>
+
+    <!-- Word Search -->
+    <div id="panelWord" style="display:none; margin-top: 10px;">
+      <label for="wordQuery">Search word (English):</label>
+      <input type="text" id="wordQuery" placeholder="minister" />
+      <button id="searchWordButton" type="button">Search</button>
+
+      <div style="margin-top:12px;">
+        <div id="matchCount" style="margin-bottom:8px;"></div>
+        <div id="resultsNumbers" style="display:flex; gap:8px; flex-wrap:wrap;"></div>
+      </div>
+    </div>
+
+    <!-- Output -->
+    <div class="quote-box" style="margin-top: 14px;">
+      <p id="quoteText">Loading…</p>
+      <p id="quoteAuthor" class="Author">- திருவள்ளுவர்</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
