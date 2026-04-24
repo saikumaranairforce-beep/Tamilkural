@@ -1,0 +1,17 @@
+async function getKural() {
+    // 1. Fetch the data from your GitHub "Server"
+    const response = await fetch('https://saikumaranairforce-beep.github.io/Tamilkural/kural-api.json');
+    const data = await response.json();
+
+    // 2. The "Random" Logic
+    const randomIndex = Math.floor(Math.random() * data.length);
+    const kural = data[randomIndex];
+
+    // 3. Display the result
+    document.getElementById('display').innerHTML = `
+        <h3>${kural.line1}</h3>
+        <p>${kural.line2}</p>
+        <hr>
+        <small>${kural.trans}</small>
+    `;
+}
