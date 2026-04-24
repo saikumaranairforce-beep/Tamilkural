@@ -78,7 +78,7 @@
                 displayDiv.innerHTML = `
                     <div class="kural-line">${kural.line1}</div>
                     <div class="kural-line">${kural.line2}</div>
-                    <div class="translation">${kural.trans || 'No translation available'}</div>
+                    <div class="translation">${kural.explanation || 'No translation available'}</div>
                 `;
                 
                 console.log("Googd! API response handled.");
@@ -96,5 +96,4 @@
 </html>
 
 
-// Automatically run when page opens
-window.onload = getKural;
+
