@@ -1,21 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-<channel>
-    <title>PK Digital AI - Daily Thirukkural</title>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>திருக்குறள் - Daily Kural</title>
     <link>https://saikumaranairforce-beep.github.io/Tamilkural/</link>
-    <description>Daily wisdom and classical Tamil literature from the desk of Kumaran GP.</description>
-    <language>ta</language>
-    <copyright>Copyright 2026 PK Digital AI</copyright>
-    <lastBuildDate>Fri, 24 Apr 2026 00:00:00 GMT</lastBuildDate>
-    <atom:link href="https://saikumaranairforce-beep.github.io/Tamilkural/rss.xml" rel="self" type="application/rss+xml" />
-
+    <description>A new Thirukkural every day</description>
     <item>
-        <title>திருக்குறள்: அறத்துப்பால் - பாயிரவியல்</title>
-        <link>https://saikumaranairforce-beep.github.io/Tamilkural/</link>
-        <description><![CDATA[ அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு. ]]></description>
-        <guid isPermaLink="false">kural-001-2026-04-24</guid>
-        <pubDate>Fri, 24 Apr 2026 00:00:00 GMT</pubDate>
+      <title>குறள் 125</title>
+      <description>Humility is good in all; but especially in the rich it is (the excellence of) higher riches — பணிவுடையவராக ஒழுகுதல்பொதுவாக எல்லோர்க்கும் நல்லதாகும்; அவர்களுள் சிறப்பாகச் செல்வர்க்கே மற்றொரு செல்வம் போன்றதாகும்.</description>
+      <pubDate>Tue, 05 May 2026 06:00:00 +0000</pubDate>
+      <guid>kural-125-2026-05-05</guid>
     </item>
-
-</channel>
+  </channel>
 </rss>
